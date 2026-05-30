@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Warning Safety Stripe Bars (Construction Theme) */
+.bg-stripes-warning {
+  background: repeating-linear-gradient(
+    -45deg,
+    #eab308,
+    #eab308 10px,
+    #1e293b 10px,
+    #1e293b 20px
+  );
+}
+
+.bg-stripes-success {
+  background: repeating-linear-gradient(
+    -45deg,
+    #10b981,
+    #10b981 10px,
+    #1e293b 10px,
+    #1e293b 20px
+  );
+}
+
+/* Slow spin animations for sun / equipment meshes */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Horizontal bouncing arrows for steps */
+@keyframes bounce-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-bounce-horizontal {
+  animation: bounce-horizontal 1s ease-in-out infinite;
+}
+
+/* Interactive cursor adjustments */
+.cursor-animated {
+  cursor: pointer;
+}
+
+/* Compact layout colors corresponding to slate-850 */
+.bg-slate-850 {
+  background-color: #1e293b;
+}
+
+/* Customized scrollbar of construction blocks panel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eab308;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ca8a04;
+}

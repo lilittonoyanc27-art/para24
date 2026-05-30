@@ -1,0 +1,6 @@
+{
+  "name": "Spanish Builder 3D",
+  "description": "3D-style construction-themed Spanish grammar games covering prepositions, time, grammatical genders, exceptions, Pretérito Perfecto, and Pretérito Imperfecto with detailed bilingual explanations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
